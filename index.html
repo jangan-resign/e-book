@@ -8,16 +8,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Jangan <span>Resign</span></div>
     <nav>
       <ul>
-        <li><a href="https://lynk.id/jangan-resign">E-Book Premium</a></li>
-        <li><a href="https://lynk.id/jangan-resign">E-Book Gratis</a></li>
+        <li><a href="#premium">E-Book Premium</a></li>
+        <li><a href="#gratis">E-Book Gratis</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-text">
       <h1>Jangan Resign Terlalu Cepat 🚀</h1>
@@ -29,25 +31,36 @@
     </div>
   </section>
 
+  <!-- Premium Section -->
   <section id="premium" class="content dark">
-    <h2>Yang Serius Ingin Resign</h2>
-    <img src="images/premium.png" alt="Premium Ebook" />
-    <p>Bagi kamu yang lebih serius, e-book versi premium siap membantu langkah resign-mu lebih mulus.</p>
-    <p>
-      Kamu bisa mendapatkan e-book premiumnya sekarang hanya dengan 50K!
-      <a href="https://lynk.id/jangan-resign" target="_blank">beli sekarang</a>.
-    </p>
+    <div class="section-inner">
+      <div class="section-text">
+        <h2>Yang Serius Ingin Resign</h2>
+        <p>Bagi kamu yang lebih serius, e-book versi premium siap membantu langkah resign-mu lebih mulus.</p>
+        <p>Hanya dengan 50K kamu bisa dapatkan e-book premium ini.</p>
+        <a href="https://lynk.id/jangan-resign" target="_blank" class="btn">Beli Sekarang</a>
+      </div>
+      <div class="section-img">
+        <img src="images/premium.png" alt="Premium Ebook" />
+      </div>
+    </div>
   </section>
   
-  <section id="ebook" class="content">
-    <h2>E-Book Gratis</h2>
-    <img src="images/gratis.png" alt="Ebook Gratis" />
-    <p>
-      Kamu bisa download e-book gratis sekarang!
-      <a href="https://lynk.id/jangan-resign" target="_blank" class="btn">download gratis</a>.
-    </p>
+  <!-- Gratis Section -->
+  <section id="gratis" class="content">
+    <div class="section-inner reverse">
+      <div class="section-text">
+        <h2>E-Book Gratis</h2>
+        <p>Kamu bisa download e-book gratis sekarang!</p>
+        <a href="https://lynk.id/jangan-resign" target="_blank" class="btn">Download Gratis</a>
+      </div>
+      <div class="section-img">
+        <img src="images/gratis.png" alt="Ebook Gratis" />
+      </div>
+    </div>
   </section>
 
+  <!-- Tentang -->
   <section id="tentang" class="content">
     <h2>Tentang</h2>
     <p>
@@ -56,6 +69,7 @@
     </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>copyright © eyangmami.my.id</p>
     <p class="disclaimer">E-book ini gratis. Dilarang keras diperjualbelikan.</p>
