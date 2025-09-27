@@ -57,41 +57,44 @@ section {
 
 /* Testimoni */
 .testi-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* default 2 kolom */
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .testi-card {
-  border: 1px solid #000;
-  padding: 15px;
-  background: #fff;
+  flex: 1 1 45%;  /* default: 2 kolom */
+  min-width: 280px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: left;
 }
 
-/* Mobile responsif: jadi 1 kolom */
+/* Responsif: HP jadi 1 kolom */
 @media (max-width: 768px) {
-  .testi-grid {
-    grid-template-columns: 1fr;
+  .testi-card {
+    flex: 1 1 100%; /* jadi full 1 kolom */
   }
 }
 
-/* Button */
+/* Tombol */
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: 1px solid #000;
   background: #000;
   color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px; /* rounded pill */
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background: #fff;
-  color: #000;
+  background: #333;
 }
 
 /* Footer */
