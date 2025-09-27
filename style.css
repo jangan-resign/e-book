@@ -99,3 +99,13 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    max-width: 250px;
+  }
+}
+
